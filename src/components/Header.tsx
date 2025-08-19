@@ -1,6 +1,6 @@
 
 import { useState } from 'react';
-import { Coffee, Menu, X } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -18,8 +18,11 @@ const Header = () => {
       <nav className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
-            <Coffee className="h-8 w-8 text-coffee-dark" />
-            <span className="text-2xl font-bold text-coffee-dark">CS Coffee Works</span>
+            <img 
+              src="/lovable-uploads/50eb3eab-af10-4a47-9513-740c6bfa8fbc.png" 
+              alt="CS Coffee Works Logo" 
+              className="h-12 w-auto"
+            />
           </div>
           
           {/* Desktop Menu */}
@@ -43,10 +46,10 @@ const Header = () => {
               Products
             </button>
             <button 
-              onClick={() => scrollToSection('gallery')}
+              onClick={() => scrollToSection('history')}
               className="text-coffee-medium hover:text-coffee-dark transition-colors"
             >
-              Gallery
+              History
             </button>
             <button 
               onClick={() => scrollToSection('contact')}
@@ -88,10 +91,10 @@ const Header = () => {
                 Products
               </button>
               <button 
-                onClick={() => scrollToSection('gallery')}
+                onClick={() => scrollToSection('history')}
                 className="text-coffee-medium hover:text-coffee-dark transition-colors text-left"
               >
-                Gallery
+                History
               </button>
               <button 
                 onClick={() => scrollToSection('contact')}
