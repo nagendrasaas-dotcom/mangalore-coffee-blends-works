@@ -40,6 +40,12 @@ const Header = () => {
               About
             </button>
             <button 
+              onClick={() => scrollToSection('cofounders')}
+              className="text-coffee-medium hover:text-coffee-dark transition-colors"
+            >
+              Cofounders
+            </button>
+            <button 
               onClick={() => scrollToSection('products')}
               className="text-coffee-medium hover:text-coffee-dark transition-colors"
             >
@@ -83,6 +89,12 @@ const Header = () => {
                 className="text-coffee-medium hover:text-coffee-dark transition-colors text-left"
               >
                 About
+              </button>
+              <button 
+                onClick={() => scrollToSection('cofounders')}
+                className="text-coffee-medium hover:text-coffee-dark transition-colors text-left"
+              >
+                Cofounders
               </button>
               <button 
                 onClick={() => scrollToSection('products')}
