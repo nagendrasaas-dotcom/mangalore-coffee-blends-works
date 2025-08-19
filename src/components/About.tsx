@@ -13,22 +13,22 @@ const About = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <h3 className="text-2xl font-bold text-coffee-dark">
-              Rooted in Mangalore Tradition
+              Rooted in Chikamagaluru Tradition
             </h3>
             <p className="text-gray-700 leading-relaxed">
-              CS Coffee Works has been a cherished part of Mangalore's coffee culture for over three decades. 
-              Our journey began in the heart of this coastal city, where the aroma of freshly roasted coffee 
+              CS Coffee Works has been a cherished part of Chikamagaluru's coffee culture for over three decades. 
+              Our journey began in the heart of this coffee region, where the aroma of freshly roasted coffee
               beans has been a morning ritual for generations.
             </p>
             <p className="text-gray-700 leading-relaxed">
               We source our premium coffee beans directly from the plantations in the Western Ghats, 
               ensuring that every cup carries the authentic taste of Karnataka's coffee heritage. 
               Our traditional roasting methods, passed down through generations, create the perfect 
-              balance of flavor and aroma that Mangaloreans have loved for years.
+              balance of flavor and aroma that Chikamagaluru residents have loved for years.
             </p>
             <p className="text-gray-700 leading-relaxed">
-              From our small family business to becoming Mangalore's trusted coffee brand, 
-              we remain committed to quality, tradition, and the rich coffee culture that defines our beautiful city.
+              From our small family business to becoming Chikamagaluru's trusted coffee brand, 
+              we remain committed to quality, tradition, and the rich coffee culture that defines our beautiful region.
             </p>
           </div>
           

@@ -31,11 +31,11 @@ const Hero = () => {
             CS Coffee Works
           </h1>
           <p className="text-xl md:text-2xl text-gray-200 mb-4">
-            Authentic Mangalore Coffee Since Generations
+            Authentic Chikamagaluru Coffee Since Generations
           </p>
           <p className="text-lg text-gray-300 mb-8 max-w-2xl mx-auto">
             From the lush hills of Karnataka to your cup, we bring you the finest coffee beans 
-            and traditional blends that capture the essence of Mangalore's rich coffee heritage.
+            and traditional blends that capture the essence of Chikamagaluru's rich coffee heritage.
           </p>
           <button 
             onClick={scrollToProducts}

@@ -12,7 +12,7 @@ const Footer = () => {
               <span className="text-2xl font-bold">CS Coffee Works</span>
             </div>
             <p className="text-gray-300 mb-4 max-w-md">
-              Bringing you the authentic taste of Mangalore coffee for over 30 years. 
+              Bringing you the authentic taste of Chikamagaluru coffee for over 30 years. 
               From our family to yours, we're committed to quality and tradition.
             </p>
             <div className="flex space-x-4">
@@ -36,8 +36,8 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Contact Info</h4>
             <ul className="space-y-2 text-gray-300">
-              <li>123 Coffee Street, Bejai</li>
-              <li>Mangalore, Karnataka 575004</li>
+              <li>123 Coffee Street, MG Road</li>
+              <li>Chikamagaluru, Karnataka 577101</li>
               <li>+91 824 123 4567</li>
               <li>info@cscoffeeworks.com</li>
             </ul>
@@ -46,7 +46,7 @@ const Footer = () => {
         
         <div className="border-t border-gray-700 mt-8 pt-8 text-center">
           <p className="text-gray-400">
-            © 2024 CS Coffee Works. All rights reserved. Made with ❤️ in Mangalore.
+            © 2024 CS Coffee Works. All rights reserved. Made with ❤️ in Chikamagaluru.
           </p>
         </div>
       </div>

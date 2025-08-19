@@ -11,7 +11,7 @@ const Contact = () => {
           </h2>
           <div className="w-24 h-1 bg-golden-gradient mx-auto mb-8"></div>
           <p className="text-gray-300 text-lg">
-            Visit us in Mangalore or reach out to order our premium coffee products.
+            Visit us in Chikamagaluru or reach out to order our premium coffee products.
           </p>
         </div>
         
@@ -24,8 +24,8 @@ const Contact = () => {
               <div>
                 <h4 className="font-semibold mb-1">Address</h4>
                 <p className="text-gray-300">
-                  123 Coffee Street, Bejai<br />
-                  Mangalore, Karnataka 575004<br />
+                  123 Coffee Street, MG Road<br />
+                  Chikamagaluru, Karnataka 577101<br />
                   India
                 </p>
               </div>

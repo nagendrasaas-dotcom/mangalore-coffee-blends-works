@@ -4,7 +4,7 @@ const History = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-coffee-dark mb-6">
-            Coffee Heritage of Mangalore
+            Coffee Heritage of Chikamagaluru
           </h2>
           <div className="w-24 h-1 bg-coffee-medium mx-auto mb-8"></div>
         </div>
@@ -16,14 +16,14 @@ const History = () => {
                 The Coastal Coffee Legacy
               </h3>
               <p className="text-gray-700 leading-relaxed">
-                Mangalore's tryst with coffee dates back to the 17th century when coffee cultivation was 
-                first introduced to the Western Ghats. The unique coastal climate and fertile soil of the 
+                Chikamagaluru's tryst with coffee dates back to the 17th century when coffee cultivation was 
+                first introduced to the Western Ghats. The unique hill climate and fertile soil of the
                 region created the perfect conditions for growing premium Arabica and Robusta beans.
               </p>
               <p className="text-gray-700 leading-relaxed">
                 The traditional processing methods developed by local farmers involved sun-drying the beans 
-                on raised platforms, allowing the coastal breeze to impart a distinctive flavor profile 
-                that became synonymous with Mangalorean coffee.
+                on raised platforms, allowing the cool mountain breeze to impart a distinctive flavor profile 
+                that became synonymous with Chikamagaluru coffee.
               </p>
             </div>
             
@@ -52,19 +52,19 @@ const History = () => {
                 Evolution of Coffee Powder Making
               </h3>
               <p className="text-gray-700 leading-relaxed">
-                The art of coffee powder making in Mangalore evolved from traditional stone grinding methods 
+                The art of coffee powder making in Chikamagaluru evolved from traditional stone grinding methods 
                 used in local households. Families would roast green coffee beans on iron pans over wood fires, 
                 creating aromatic blends that filled entire neighborhoods with the rich scent of freshly roasted coffee.
               </p>
               <p className="text-gray-700 leading-relaxed">
-                By the 1960s, small-scale coffee processing units began emerging across Mangalore, 
+                By the 1960s, small-scale coffee processing units began emerging across Chikamagaluru, 
                 combining traditional roasting techniques with modern grinding technology. This fusion 
-                created the distinctive Mangalorean coffee powder that became famous throughout Karnataka 
+                created the distinctive Chikamagaluru coffee powder that became famous throughout Karnataka
                 and beyond for its bold flavor and perfect grind consistency.
               </p>
               <p className="text-gray-700 leading-relaxed">
                 Today, CS Coffee Works continues this proud tradition, using time-tested methods alongside 
-                modern quality control to deliver the authentic taste that has made Mangalore coffee legendary.
+                modern quality control to deliver the authentic taste that has made Chikamagaluru coffee legendary.
               </p>
             </div>
           </div>

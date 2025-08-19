@@ -3,9 +3,9 @@ const Products = () => {
   const products = [
     {
       id: 1,
-      name: "Mangalore Special Blend",
+      name: "Chikamagaluru Special Blend",
       type: "Coffee Powder",
-      description: "Our signature blend combining the finest Arabica and Robusta beans, roasted to perfection with traditional Mangalore spices.",
+      description: "Our signature blend combining the finest Arabica and Robusta beans, roasted to perfection with traditional Chikamagaluru spices.",
       price: "₹280",
       weight: "250g",
       image: "https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?auto=format&fit=crop&w=400&q=80"
@@ -32,7 +32,7 @@ const Products = () => {
       id: 4,
       name: "Coastal Roast Beans",
       type: "Coffee Beans",
-      description: "Medium roast beans with a unique coastal flavor profile, capturing the essence of Mangalore's coffee tradition.",
+      description: "Medium roast beans with a unique hill country flavor profile, capturing the essence of Chikamagaluru's coffee tradition.",
       price: "₹380",
       weight: "500g",
       image: "https://images.unsplash.com/photo-1500673922987-e212871fec22?auto=format&fit=crop&w=400&q=80"
@@ -49,7 +49,7 @@ const Products = () => {
           <div className="w-24 h-1 bg-coffee-medium mx-auto mb-8"></div>
           <p className="text-gray-600 text-lg">
             Discover our premium range of coffee powders and beans, 
-            crafted with love and tradition in the heart of Mangalore.
+            crafted with love and tradition in the heart of Chikamagaluru.
           </p>
         </div>
         
