@@ -1,7 +1,55 @@
 
 import { MapPin, Phone, Mail, Clock } from 'lucide-react';
+import { useState } from 'react';
+import { useToast } from '@/hooks/use-toast';
 
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: ''
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const { toast } = useToast();
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({ ...prev, [name]: value }));
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+
+    try {
+      // Create mailto link with form data
+      const subject = encodeURIComponent(`Contact Form Submission from ${formData.name}`);
+      const body = encodeURIComponent(
+        `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
+      );
+      const mailtoLink = `mailto:cscoffeeworks@gmail.com?subject=${subject}&body=${body}`;
+      
+      // Open email client
+      window.location.href = mailtoLink;
+      
+      // Reset form
+      setFormData({ name: '', email: '', message: '' });
+      
+      toast({
+        title: "Email client opened",
+        description: "Please send the email from your email client to complete your inquiry.",
+      });
+    } catch (error) {
+      toast({
+        title: "Error",
+        description: "Failed to open email client. Please contact us directly at cscoffeeworks@gmail.com",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <section id="contact" className="py-20 bg-coffee-dark text-white">
       <div className="container mx-auto px-4">
@@ -60,7 +108,7 @@ const Contact = () => {
           
           <div className="bg-white/10 rounded-lg p-8">
             <h3 className="text-2xl font-bold mb-6">Send us a Message</h3>
-            <form className="space-y-6">
+            <form onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium mb-2">
                   Name
@@ -68,6 +116,10 @@ const Contact = () => {
                 <input 
                   type="text" 
                   id="name"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleInputChange}
+                  required
                   className="w-full px-4 py-2 bg-white/20 border border-white/30 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400 text-white placeholder-gray-300"
                   placeholder="Your Name"
                 />
@@ -80,6 +132,10 @@ const Contact = () => {
                 <input 
                   type="email" 
                   id="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleInputChange}
+                  required
                   className="w-full px-4 py-2 bg-white/20 border border-white/30 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400 text-white placeholder-gray-300"
                   placeholder="your@email.com"
                 />
@@ -91,6 +147,10 @@ const Contact = () => {
                 </label>
                 <textarea 
                   id="message"
+                  name="message"
+                  value={formData.message}
+                  onChange={handleInputChange}
+                  required
                   rows={4}
                   className="w-full px-4 py-2 bg-white/20 border border-white/30 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400 text-white placeholder-gray-300"
                   placeholder="Your message..."
@@ -99,9 +159,10 @@ const Contact = () => {
               
               <button 
                 type="submit"
-                className="w-full bg-yellow-600 hover:bg-yellow-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-300"
+                disabled={isSubmitting}
+                className="w-full bg-yellow-600 hover:bg-yellow-700 disabled:bg-yellow-800 disabled:cursor-not-allowed text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-300"
               >
-                Send Message
+                {isSubmitting ? 'Sending...' : 'Send Message'}
               </button>
             </form>
           </div>
