@@ -34,9 +34,9 @@ const Contact = () => {
             <div className="flex items-start space-x-4">
               <Phone className="h-6 w-6 text-yellow-400 mt-1 flex-shrink-0" />
               <div>
-                <h4 className="font-semibold mb-1">Phone</h4>
-                <p className="text-gray-300">+91 824 123 4567</p>
-                <p className="text-gray-300">+91 987 654 3210</p>
+                <h4 className="font-semibold mb-1">Mobile</h4>
+                <p className="text-gray-300">+91 9611668951</p>
+                <p className="text-gray-300">+91 9110681397</p>
               </div>
             </div>
             
@@ -44,8 +44,7 @@ const Contact = () => {
               <Mail className="h-6 w-6 text-yellow-400 mt-1 flex-shrink-0" />
               <div>
                 <h4 className="font-semibold mb-1">Email</h4>
-                <p className="text-gray-300">info@cscoffeeworks.com</p>
-                <p className="text-gray-300">orders@cscoffeeworks.com</p>
+                <p className="text-gray-300">cscoffeeworks@gmail.com</p>
               </div>
             </div>
             
