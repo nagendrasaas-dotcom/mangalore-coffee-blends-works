@@ -1,6 +1,7 @@
 
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
+import logo from '@/assets/cs-coffee-logo.jpg';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,8 +20,8 @@ const Header = () => {
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
             <img 
-              src="/lovable-uploads/50eb3eab-af10-4a47-9513-740c6bfa8fbc.png" 
-              alt="CS Coffee Works Logo" 
+              src={logo} 
+              alt="CS Coffee Works Premium Quality" 
               className="h-12 w-auto"
             />
           </div>
@@ -43,7 +44,7 @@ const Header = () => {
               onClick={() => scrollToSection('cofounders')}
               className="text-coffee-medium hover:text-coffee-dark transition-colors"
             >
-              Co-founders
+              Founders
             </button>
             <button 
               onClick={() => scrollToSection('products')}
@@ -94,7 +95,7 @@ const Header = () => {
                 onClick={() => scrollToSection('cofounders')}
                 className="text-coffee-medium hover:text-coffee-dark transition-colors text-left"
               >
-                Co-founders
+                Founders
               </button>
               <button 
                 onClick={() => scrollToSection('products')}

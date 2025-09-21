@@ -15,7 +15,7 @@ const Cofounders = () => {
     {
       id: 2,
       name: "Priya Chandrashekar",
-      title: "Co-founder & Partner",
+      title: "Founder & Partner",
       bio: "As a farmer and educationalist in Chikkamagaluru made him to have the knowledge of coffee world with supporting hand to the CS coffee works, helped to build a firm coffee brand and eager to supply the Chikamagaluru coffee taste to whole world.",
       image: "/lovable-uploads/4fcacd1b-f8e7-4c2b-a077-3c8d7e508778.png",
       linkedin: "#",
@@ -28,7 +28,7 @@ const Cofounders = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-coffee-dark mb-6">
-            Meet Our Co-founders
+            Meet Our Founders
           </h2>
           <div className="w-24 h-1 bg-coffee-medium mx-auto mb-8"></div>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -39,7 +39,7 @@ const Cofounders = () => {
 
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12">
-            {cofounders.map((cofounder) => (
+        {cofounders.map((cofounder) => (
               <div key={cofounder.id} className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
                 <div className="aspect-square overflow-hidden">
                   <img 
