@@ -41,11 +41,11 @@ const Cofounders = () => {
           <div className="grid md:grid-cols-2 gap-12">
         {cofounders.map((cofounder) => (
               <div key={cofounder.id} className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
-                <div className="aspect-square overflow-hidden">
+                <div className="aspect-[4/3] overflow-hidden rounded-t-xl">
                   <img 
                     src={cofounder.image}
                     alt={`${cofounder.name} - ${cofounder.title}`}
-                    className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+                    className="w-full h-full object-contain bg-gray-50 transition-transform duration-300 hover:scale-105"
                   />
                 </div>
                 <div className="p-8">
