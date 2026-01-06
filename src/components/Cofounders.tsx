@@ -7,7 +7,7 @@ const Cofounders = () => {
       name: "Surendra Rao",
       title: "Founder",
       bio: "A Malnad man growing in green lush estates of all types of coffee plants and city filled with all the coffee varieties made him to gain knowledge about the coffee universe, with 25+ years of experience in coffee world made to brew a coffee powder suitable for all the coffee lovers also we bring the taste of Chikkamagaluru coffee taste is Chikkamagaluru Special coffee powder.",
-      image: "/lovable-uploads/a8ff9419-360e-4d4b-a689-d3e5b0d660da.png",
+      image: "/lovable-uploads/surendra-rao.jpg",
       linkedin: "#",
       email: "cscoffeeworks@gmail.com",
       mobile: ["9611668951", "9110681397"]
