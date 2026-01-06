@@ -1,9 +1,6 @@
-
 import { Coffee, Facebook, Instagram, Twitter } from 'lucide-react';
-
 const Footer = () => {
-  return (
-    <footer className="bg-coffee-dark text-white py-12">
+  return <footer className="bg-coffee-dark text-white py-12">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-4 gap-8">
           <div className="col-span-2">
@@ -45,13 +42,9 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-gray-700 mt-8 pt-8 text-center">
-          <p className="text-gray-400">
-            © 2024 CS Coffee Works. All rights reserved. Made with ❤️ in Chikamagaluru.
-          </p>
+          <p className="text-gray-400">© 2026 CS Coffee Works. All rights reserved. Made with ❤️ by Eadda Solutions Pvt. Ltd.</p>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
