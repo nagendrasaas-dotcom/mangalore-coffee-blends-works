@@ -3,38 +3,38 @@ const Products = () => {
   const products = [
     {
       id: 1,
-      name: "Chikamagaluru Special Blend",
+      name: "C S Coffee Powder",
       type: "Coffee Powder",
-      description: "Our signature blend combining the finest Arabica and Robusta beans, roasted to perfection with traditional Chikamagaluru spices.",
-      price: "₹280",
-      weight: "250g",
+      description: "Chikamagalur Special Coffee Powder - 80% coffee and 20% chicory. Available in 250g and 500g quantities.",
+      price: "₹190",
+      weight: "200g",
       image: "https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?auto=format&fit=crop&w=400&q=80"
     },
     {
       id: 2,
-      name: "Kaapi Powder Premium",
+      name: "C S Coffee Powder",
       type: "Coffee Powder",
-      description: "Traditional South Indian filter coffee powder made from hand-picked beans, perfect for your morning kaapi ritual.",
-      price: "₹320",
-      weight: "250g",
+      description: "Chikamagalur Special Coffee Powder - 80% coffee and 20% chicory. Perfect for your daily filter coffee.",
+      price: "₹450",
+      weight: "400g",
       image: "https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?auto=format&fit=crop&w=400&q=80"
     },
     {
       id: 3,
-      name: "Plantation AA Beans",
-      type: "Coffee Beans",
-      description: "Premium grade AA coffee beans from Karnataka plantations, perfect for those who prefer to grind their own coffee.",
-      price: "₹450",
-      weight: "500g",
+      name: "Coffee Seeds",
+      type: "Coffee Seeds",
+      description: "All types of premium coffee seeds from Chikamagalur. Perfect for those who prefer to roast and grind their own coffee.",
+      price: "From ₹500/kg",
+      weight: "Various",
       image: "https://images.unsplash.com/photo-1482938289607-e9573fc25ebb?auto=format&fit=crop&w=400&q=80"
     },
     {
       id: 4,
-      name: "Coastal Roast Beans",
-      type: "Coffee Beans",
-      description: "Medium roast beans with a unique hill country flavor profile, capturing the essence of Chikamagaluru's coffee tradition.",
-      price: "₹380",
-      weight: "500g",
+      name: "Roasted Coffee Seeds",
+      type: "Roasted Seeds",
+      description: "All types of freshly roasted coffee seeds from Chikamagalur. Contact us for price details.",
+      price: "Contact Us",
+      weight: "Various",
       image: "https://images.unsplash.com/photo-1500673922987-e212871fec22?auto=format&fit=crop&w=400&q=80"
     }
   ];
