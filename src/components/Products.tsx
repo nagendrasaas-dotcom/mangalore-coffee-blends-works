@@ -8,7 +8,7 @@ const Products = () => {
       description: "Chikamagalur Special Coffee Powder - 80% coffee and 20% chicory. Available in 250g and 500g quantities.",
       price: "₹190",
       weight: "200g",
-      image: "https://images.unsplash.com/photo-1618160702438-9b02ab6515c9?auto=format&fit=crop&w=400&q=80"
+      image: "/lovable-uploads/cs-coffee-200g.jpg"
     },
     {
       id: 2,
@@ -17,7 +17,7 @@ const Products = () => {
       description: "Chikamagalur Special Coffee Powder - 80% coffee and 20% chicory. Perfect for your daily filter coffee.",
       price: "₹450",
       weight: "400g",
-      image: "https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?auto=format&fit=crop&w=400&q=80"
+      image: "/lovable-uploads/cs-coffee-400g.jpg"
     },
     {
       id: 3,
@@ -26,7 +26,7 @@ const Products = () => {
       description: "All types of premium coffee seeds from Chikamagalur. Perfect for those who prefer to roast and grind their own coffee.",
       price: "From ₹500/kg",
       weight: "Various",
-      image: "https://images.unsplash.com/photo-1482938289607-e9573fc25ebb?auto=format&fit=crop&w=400&q=80"
+      image: "/lovable-uploads/coffee-seeds.jpg"
     },
     {
       id: 4,
@@ -35,7 +35,7 @@ const Products = () => {
       description: "All types of freshly roasted coffee seeds from Chikamagalur. Contact us for price details.",
       price: "Contact Us",
       weight: "Various",
-      image: "https://images.unsplash.com/photo-1500673922987-e212871fec22?auto=format&fit=crop&w=400&q=80"
+      image: "/lovable-uploads/roasted-coffee-seeds.jpg"
     }
   ];
 
