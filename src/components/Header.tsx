@@ -22,7 +22,7 @@ const Header = () => {
             <img 
               src={logo} 
               alt="CS Coffee Works Premium Quality" 
-              className="h-12 w-auto"
+              className="h-12 w-auto rounded bg-white p-1"
             />
           </div>
           
