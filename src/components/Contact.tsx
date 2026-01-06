@@ -72,9 +72,9 @@ const Contact = () => {
               <div>
                 <h4 className="font-semibold mb-1">Address</h4>
                 <p className="text-gray-300">
-                  123 Coffee Street, MG Road<br />
-                  Chikamagaluru, Karnataka 577101<br />
-                  India
+                  4th Cross, APMC Yard<br />
+                  Chikamagalur 577101<br />
+                  Karnataka, India
                 </p>
               </div>
             </div>
@@ -82,8 +82,8 @@ const Contact = () => {
             <div className="flex items-start space-x-4">
               <Phone className="h-6 w-6 text-yellow-400 mt-1 flex-shrink-0" />
               <div>
-                <h4 className="font-semibold mb-1">Mobile</h4>
-                <p className="text-gray-300">+91 9611668951</p>
+                <h4 className="font-semibold mb-1">Contact for Enquiry & Order</h4>
+                <p className="text-gray-300">+91 9663770408</p>
                 <p className="text-gray-300">+91 9110681397</p>
               </div>
             </div>
