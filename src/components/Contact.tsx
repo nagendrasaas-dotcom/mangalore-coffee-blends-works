@@ -14,7 +14,7 @@ const Contact = () => {
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
-    setFormData(prev => ({ ...prev, [name]: value }));
+    setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -28,22 +28,22 @@ const Contact = () => {
         `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
       );
       const mailtoLink = `mailto:cscoffeeworks@gmail.com?subject=${subject}&body=${body}`;
-      
+
       // Open email client
       window.location.href = mailtoLink;
-      
+
       // Reset form
       setFormData({ name: '', email: '', message: '' });
-      
+
       toast({
         title: "Email client opened",
-        description: "Please send the email from your email client to complete your inquiry.",
+        description: "Please send the email from your email client to complete your inquiry."
       });
     } catch (error) {
       toast({
         title: "Error",
         description: "Failed to open email client. Please contact us directly at cscoffeeworks@gmail.com",
-        variant: "destructive",
+        variant: "destructive"
       });
     } finally {
       setIsSubmitting(false);
@@ -71,8 +71,10 @@ const Contact = () => {
               <MapPin className="h-6 w-6 text-yellow-400 mt-1 flex-shrink-0" />
               <div>
                 <h4 className="font-semibold mb-1">Address</h4>
-                <p className="text-gray-300">
-                  4th Cross, APMC Yard<br />
+                <p className="text-gray-300">6th Cross, APMC Yard
+Chikamagalur 577101
+Karnataka, India
+                  <br />
                   Chikamagalur 577101<br />
                   Karnataka, India
                 </p>
@@ -113,39 +115,37 @@ const Contact = () => {
                 <label htmlFor="name" className="block text-sm font-medium mb-2">
                   Name
                 </label>
-                <input 
-                  type="text" 
-                  id="name"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleInputChange}
-                  required
-                  className="w-full px-4 py-2 bg-white/20 border border-white/30 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400 text-white placeholder-gray-300"
-                  placeholder="Your Name"
-                />
+                <input type="text" id="name"
+                name="name"
+                value={formData.name}
+                onChange={handleInputChange}
+                required
+                className="w-full px-4 py-2 bg-white/20 border border-white/30 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400 text-white placeholder-gray-300"
+                placeholder="Your Name" />
+                
               </div>
               
               <div>
                 <label htmlFor="email" className="block text-sm font-medium mb-2">
                   Email
                 </label>
-                <input 
-                  type="email" 
+                <input
+                  type="email"
                   id="email"
                   name="email"
                   value={formData.email}
                   onChange={handleInputChange}
                   required
                   className="w-full px-4 py-2 bg-white/20 border border-white/30 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400 text-white placeholder-gray-300"
-                  placeholder="your@email.com"
-                />
+                  placeholder="your@email.com" />
+                
               </div>
               
               <div>
                 <label htmlFor="message" className="block text-sm font-medium mb-2">
                   Message
                 </label>
-                <textarea 
+                <textarea
                   id="message"
                   name="message"
                   value={formData.message}
@@ -153,23 +153,23 @@ const Contact = () => {
                   required
                   rows={4}
                   className="w-full px-4 py-2 bg-white/20 border border-white/30 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400 text-white placeholder-gray-300"
-                  placeholder="Your message..."
-                ></textarea>
+                  placeholder="Your message...">
+                </textarea>
               </div>
               
-              <button 
+              <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full bg-yellow-600 hover:bg-yellow-700 disabled:bg-yellow-800 disabled:cursor-not-allowed text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-300"
-              >
+                className="w-full bg-yellow-600 hover:bg-yellow-700 disabled:bg-yellow-800 disabled:cursor-not-allowed text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-300">
+                
                 {isSubmitting ? 'Sending...' : 'Send Message'}
               </button>
             </form>
           </div>
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 };
 
 export default Contact;
