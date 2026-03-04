@@ -32,8 +32,9 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Contact Info</h4>
             <ul className="space-y-2 text-gray-300">
-              <li>123 Coffee Street, MG Road</li>
-              <li>Chikamagaluru, Karnataka 577101</li>
+              <li>4th Cross, APMC Yard</li>
+              <li>Chikamagalur 577101</li>
+              <li>Karnataka, India</li>
               <li>+91 824 123 4567</li>
               <li>info@cscoffeeworks.com</li>
             </ul>

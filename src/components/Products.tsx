@@ -31,7 +31,7 @@ const Products = () => {
       type: "Coffee Powder",
       description: "Chikamagalur Special Coffee Powder - 80% coffee and 20% chicory. Perfect for your daily filter coffee.",
       price: "₹450",
-      weight: "400g",
+      weight: "500g",
       image: "/lovable-uploads/cs-coffee-400g.jpg",
       flipImage: true,
       flipVertical: true
