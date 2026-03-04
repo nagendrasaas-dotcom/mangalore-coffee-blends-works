@@ -1,5 +1,6 @@
 
 import logo from '@/assets/cs-coffee-logo.jpg';
+import heroBg from '@/assets/hero-bg.jpg';
 
 const Hero = () => {
   const scrollToProducts = () => {
@@ -14,7 +15,7 @@ const Hero = () => {
       <div 
         className="absolute inset-0 z-0"
         style={{
-          backgroundImage: `url('https://images.unsplash.com/photo-1501854140801-50d01698950b?auto=format&fit=crop&w=1920&q=80')`,
+          backgroundImage: `url(${heroBg})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
