@@ -28,7 +28,7 @@ const Hero = () => {
           <div className="flex justify-center mb-6">
             <img src={logo} alt="CS Coffee Works" className="h-24 w-auto rounded-lg shadow-lg" />
           </div>
-          <h1 className="text-5xl md:text-7xl font-bold text-white mb-6">
+          <h1 className="text-5xl md:text-7xl font-bold text-white mb-6" style={{ fontFamily: "'Playfair Display', serif", letterSpacing: '0.02em' }}>
             CS Coffee Works
           </h1>
           <p className="text-xl md:text-2xl text-gray-200 mb-4">

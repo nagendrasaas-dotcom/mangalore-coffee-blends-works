@@ -33,7 +33,8 @@ const Products = () => {
       price: "₹450",
       weight: "400g",
       image: "/lovable-uploads/cs-coffee-400g.jpg",
-      flipImage: true
+      flipImage: true,
+      flipVertical: true
     },
     {
       id: 3,
@@ -87,7 +88,10 @@ const Products = () => {
                 <img 
                   src={product.image}
                   alt={product.name}
-                  className={`w-full h-56 object-contain group-hover:scale-105 transition-transform duration-300 p-2 ${(product as any).flipImage ? 'scale-x-[-1]' : ''}`}
+                  className={`w-full h-56 object-contain group-hover:scale-105 transition-transform duration-300 p-2 ${
+                    (product as any).flipImage && (product as any).flipVertical ? 'scale-x-[-1] scale-y-[-1]' :
+                    (product as any).flipImage ? 'scale-x-[-1]' : ''
+                  }`}
                 />
                 <div className="absolute top-4 right-4 bg-coffee-dark text-white px-2 py-1 rounded text-sm">
                   {product.type}
@@ -135,7 +139,10 @@ const Products = () => {
                       <img 
                         src={product.image}
                         alt={product.name}
-                        className={`w-full max-h-[60vh] object-contain rounded-lg ${(product as any).flipImage ? 'scale-x-[-1]' : ''}`}
+                        className={`w-full max-h-[60vh] object-contain rounded-lg ${
+                          (product as any).flipImage && (product as any).flipVertical ? 'scale-x-[-1] scale-y-[-1]' :
+                          (product as any).flipImage ? 'scale-x-[-1]' : ''
+                        }`}
                       />
                       <p className="text-coffee-dark mt-4 text-lg font-semibold">
                         {product.name} - {product.weight}
