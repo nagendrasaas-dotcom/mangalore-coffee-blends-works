@@ -1,5 +1,5 @@
 
-import { Coffee } from 'lucide-react';
+import logo from '@/assets/cs-coffee-logo.jpg';
 
 const Hero = () => {
   const scrollToProducts = () => {
@@ -14,7 +14,7 @@ const Hero = () => {
       <div 
         className="absolute inset-0 z-0"
         style={{
-          backgroundImage: `url('https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=1920&q=80')`,
+          backgroundImage: `url('https://images.unsplash.com/photo-1501854140801-50d01698950b?auto=format&fit=crop&w=1920&q=80')`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}
@@ -25,7 +25,7 @@ const Hero = () => {
       <div className="container mx-auto px-4 text-center relative z-10">
         <div className="max-w-4xl mx-auto">
           <div className="flex justify-center mb-6">
-            <Coffee className="h-16 w-16 text-golden-gradient" />
+            <img src={logo} alt="CS Coffee Works" className="h-24 w-auto rounded-lg shadow-lg" />
           </div>
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6">
             CS Coffee Works

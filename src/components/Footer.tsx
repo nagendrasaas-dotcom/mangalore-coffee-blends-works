@@ -9,8 +9,7 @@ const Footer = () => {
               <span className="text-2xl font-bold">CS Coffee Works</span>
             </div>
             <p className="text-gray-300 mb-4 max-w-md">
-              Bringing you the authentic taste of Chikamagaluru coffee for over 30 years. 
-              From our family to yours, we're committed to quality and tradition.
+              Bringing you the authentic taste of Chikamagaluru coffee to your palate and we're committed to quality and tradition.
             </p>
             <div className="flex space-x-4">
               <Facebook className="h-6 w-6 text-gray-400 hover:text-white cursor-pointer transition-colors" />
