@@ -22,7 +22,8 @@ const Products = () => {
       description: "Chikamagalur Special Coffee Powder - 80% coffee and 20% chicory. Available in 250g and 500g quantities.",
       price: "₹190",
       weight: "200g",
-      image: "/lovable-uploads/cs-coffee-200g.jpg"
+      image: "/lovable-uploads/cs-coffee-200g.jpg",
+      flipImage: false
     },
     {
       id: 2,
@@ -31,7 +32,8 @@ const Products = () => {
       description: "Chikamagalur Special Coffee Powder - 80% coffee and 20% chicory. Perfect for your daily filter coffee.",
       price: "₹450",
       weight: "400g",
-      image: "/lovable-uploads/cs-coffee-400g.jpg"
+      image: "/lovable-uploads/cs-coffee-400g.jpg",
+      flipImage: true
     },
     {
       id: 3,
@@ -79,13 +81,13 @@ const Products = () => {
               className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 group"
             >
               <div 
-                className="relative overflow-hidden cursor-pointer"
+                className="relative overflow-hidden cursor-pointer bg-gray-50"
                 onClick={() => setSelectedProduct(product.id)}
               >
                 <img 
                   src={product.image}
                   alt={product.name}
-                  className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300"
+                  className={`w-full h-56 object-contain group-hover:scale-105 transition-transform duration-300 p-2 ${(product as any).flipImage ? 'scale-x-[-1]' : ''}`}
                 />
                 <div className="absolute top-4 right-4 bg-coffee-dark text-white px-2 py-1 rounded text-sm">
                   {product.type}
@@ -124,26 +126,27 @@ const Products = () => {
         </div>
 
         <Dialog open={selectedProduct !== null} onOpenChange={() => setSelectedProduct(null)}>
-          <DialogContent className="max-w-3xl p-0 overflow-hidden bg-black/90">
+          <DialogContent className="max-w-2xl w-full p-0 overflow-hidden bg-white">
             <Carousel className="w-full" opts={{ startIndex: selectedProduct ? selectedProduct - 1 : 0 }}>
               <CarouselContent>
                 {products.map((product) => (
                   <CarouselItem key={product.id}>
-                    <div className="flex flex-col items-center p-4">
+                    <div className="flex flex-col items-center p-6">
                       <img 
                         src={product.image}
                         alt={product.name}
-                        className="max-h-[70vh] w-auto object-contain rounded-lg"
+                        className={`w-full max-h-[60vh] object-contain rounded-lg ${(product as any).flipImage ? 'scale-x-[-1]' : ''}`}
                       />
-                      <p className="text-white mt-4 text-lg font-semibold">
+                      <p className="text-coffee-dark mt-4 text-lg font-semibold">
                         {product.name} - {product.weight}
                       </p>
+                      <p className="text-gray-500 text-sm mt-1">{product.description}</p>
                     </div>
                   </CarouselItem>
                 ))}
               </CarouselContent>
-              <CarouselPrevious className="left-4" />
-              <CarouselNext className="right-4" />
+              <CarouselPrevious className="left-2" />
+              <CarouselNext className="right-2" />
             </Carousel>
           </DialogContent>
         </Dialog>
