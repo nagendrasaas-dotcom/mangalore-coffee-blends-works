@@ -34,8 +34,8 @@ const About = () => {
           
           <div className="relative">
             <img 
-              src="https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?auto=format&fit=crop&w=600&q=80"
-              alt="Coffee plantation"
+              src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?auto=format&fit=crop&w=600&q=80"
+              alt="Coffee roasting"
               className="rounded-lg shadow-lg w-full h-80 object-cover"
             />
             <div className="absolute inset-0 rounded-lg bg-gradient-to-t from-coffee-dark/20 to-transparent"></div>
